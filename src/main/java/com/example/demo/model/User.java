@@ -12,7 +12,7 @@ public class User {
     private String password;
     private String roles;
     private LocalDateTime created;
-    private LocalDateTime last_logined;
+    private LocalDateTime lastLogined;
     private boolean enabled;
     
     public int getId() {
@@ -55,13 +55,7 @@ public class User {
         this.created = created;
     }
 
-    public LocalDateTime getLast_logined() {
-        return last_logined;
-    }
-
-    public void setLast_logined(LocalDateTime last_logined) {
-        this.last_logined = last_logined;
-    }
+   
 
     public boolean isEnabled() {
         return enabled;
@@ -70,6 +64,14 @@ public class User {
     public void setEnabled(boolean enabled) {
         this.enabled = enabled;
     }
+
+	public LocalDateTime getLastLogined() {
+		return lastLogined;
+	}
+
+	public void setLastLogined(LocalDateTime lastLogined) {
+		this.lastLogined = lastLogined;
+	}
 }
 
 

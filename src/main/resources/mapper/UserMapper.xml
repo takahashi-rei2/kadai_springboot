@@ -20,7 +20,7 @@
             enabled
         FROM `user`
         ORDER BY id
-        LIMIT #{limit} OFFSET #{offset}
+        
     </select>
     <resultMap id="UserListResult" type="com.example.demo.model.User">
         <id property="id" column="id"/>
