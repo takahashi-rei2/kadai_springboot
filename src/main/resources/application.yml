@@ -6,8 +6,6 @@ spring:
     password: password
     hikari:
       max-lifetime: 55000
-mybatis:
-  mapper-locations: classpath*:mapper/*.xml 
   sql:
     init:
       schema-locations: classpath:/sql/schema.sql
@@ -18,4 +16,7 @@ mybatis:
     console:
       path: /h2-console
       enabled: true
-      
+          
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml 
+  
