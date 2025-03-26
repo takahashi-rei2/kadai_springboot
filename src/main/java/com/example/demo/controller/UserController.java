@@ -9,16 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.repository.UserRepository;
 import java.util.List;
+
 @RestController
 @RequestMapping("/users")
 public class UserController {
-
-	@Autowired
+    @Autowired
     private  UserRepository userRepository;
 
-   
-
-    // データベースから取得したユーザーリストを返すエンドポイント
     @GetMapping
     public List<User> getAllUsers() {
         return userRepository.findAll();

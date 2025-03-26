@@ -10,14 +10,11 @@ import java.util.List;
 
 @Repository
 public class UserRepository {
-
-	@Autowired
-    private  UserMapper userMapper;
-
-   
+	
+    @Autowired
+    private UserMapper userMapper;
 
     public List<User> findAll() {
         return userMapper.findAll();
     }
 }
-
