@@ -1,6 +1,9 @@
 package com.example.demo;
 
+import org.junit.jupiter.api.Test;
+
 public class looptest2 {
+	@Test
 	void mondai1() {      
 	    for (int i = 0; i < 5; i++) {
 	        for (int j = 0; j < 5; j++) {
@@ -12,7 +15,8 @@ public class looptest2 {
 	        }
 	        System.out.println();
 	        }
-	}      
+	}     
+	@Test
     void mondai2() {      
 	    for (int i = 0; i < 5; i++) {                
 	         for (int j = 0; j < 5; j++) {
@@ -25,7 +29,7 @@ public class looptest2 {
 	             System.out.println();
 	    }
     }       
-
+    @Test
     void mondai3() {      
 	    for (int i = 0; i < 5; i++) {
 	        int center = (int) Math.ceil(5/2);
