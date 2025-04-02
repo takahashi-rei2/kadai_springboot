@@ -8,6 +8,7 @@ import java.util.List;
 @Mapper
 public interface UserMapper {
 
+
     int count();
 
     List<User> findAll();
@@ -15,6 +16,10 @@ public interface UserMapper {
     int insert(User user);
 
     int update(@Param("id") int id, @Param("user") User user);
+
+    
+    public int count();
+
 
     User findById(@Param("id") int id);
 }

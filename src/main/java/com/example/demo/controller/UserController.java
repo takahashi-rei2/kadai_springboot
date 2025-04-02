@@ -22,6 +22,11 @@ public class UserController {
     private UserMapper userMapper;
 
     // 全ユーザーを取得
+
+    @Autowired
+    private  UserRepository userRepository;
+
+
     @GetMapping
     public List<User> getAllUsers() {
         return userMapper.findAll();

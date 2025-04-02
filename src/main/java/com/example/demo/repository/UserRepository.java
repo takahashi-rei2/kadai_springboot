@@ -33,4 +33,3 @@ public class UserRepository {
         userMapper.update(0, user);
     }
 }
-

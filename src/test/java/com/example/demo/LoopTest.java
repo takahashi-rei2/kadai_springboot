@@ -18,7 +18,7 @@ public class LoopTest {
 	  
 	@Test 
 	void mondai2() {
-	    for (int row = 4; row <=0; row--) {
+	    for (int row = 4; row >=0; row--) {
 	    
 	        for (int col = 0; col <= row; col++) {
 	        
